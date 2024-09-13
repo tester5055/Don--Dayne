@@ -1,0 +1,172 @@
+:root {
+    --primary-bg: #ffffff;
+    --primary-color: #4a56e2;
+    --hover-color: #3b45c4;
+}
+/* About Me Info Section */
+.about-me-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.about-me-text {
+    font-size: 1.5vw;
+    margin: 20px 0;
+}
+
+/* Styling for the images */
+.about-me-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.about-me-image {
+    width: 30%; /* Each image will take 30% of the available width */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.about-me-image:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile adjustments for the About Me section */
+@media screen and (max-width: 480px) {
+    .about-me-text {
+        font-size: 4vw;
+    }
+
+    .about-me-images {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-me-image {
+        width: 100%; /* Full width on mobile */
+    }
+}
+
+.about-me-section {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--primary-bg);
+    border-radius: 15px;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.about-me-section h2 {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-me-section p {
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
+
+.contact-button-wrapper {
+    margin-bottom: 40px;
+}
+
+.contact-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    font-size: 2vw;
+    border: none;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn i {
+    margin-right: 8px;
+}
+
+.contact-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.emoji {
+    font-size: 2rem;
+}
+
+/* Styling for mobile devices (screens up to 600px) */
+@media screen and (max-width: 480px) {
+    .about-me-section {
+        padding: 10px;
+        max-width: 95vw;
+    }
+
+    .about-me-section h2 {
+        font-size: 6vw;
+    }
+
+    .about-me-section p {
+        font-size: 4vw;
+    }
+
+    .contact-btn {
+        font-size: 4vw;
+        padding: 8px 15px;
+    }
+
+    .social-links {
+        gap: 20px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .about-me-info {
+        margin-top: 10px;
+
+    }
+}
+/* Styling for the See More button */
+.see-more-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.see-more-btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Mobile adjustments for the See More button */
+@media screen and (max-width: 480px) {
+    .see-more-btn {
+        font-size: 4vw;
+        padding: 8px 15px;
+    }
+}
